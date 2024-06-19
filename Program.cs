@@ -11,20 +11,18 @@ namespace homeWorkEigthControlEnter
         static void Main(string[] args)
         {
             string wordForExit = "exit";
-            
-            while (true)
+            string userInput = " ";
+
+            while (wordForExit != userInput)
             {
                 Console.Write("Для выхода из программы введите слово exit: ");
-                wordForExit = Console.ReadLine();
-                if (wordForExit == "exit")
+                userInput = Console.ReadLine();
+                if (wordForExit == userInput)
                 {
                     Console.WriteLine("Верное слово");
                     break;
                 }
-                else
-                {
-                    Console.WriteLine("Попробуйте еще раз");
-                }
+                Console.WriteLine("Попробуйте еще раз");
             }
         }
     }
