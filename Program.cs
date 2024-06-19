@@ -14,7 +14,7 @@ namespace homeWorkEigthControlEnter
             
             while (true)
             {
-                Console.Write("Для выхода из программы введите слово " + wordForExit +": ");
+                Console.Write("Для выхода из программы введите слово exit: ");
                 wordForExit = Console.ReadLine();
                 if (wordForExit == "exit")
                 {
