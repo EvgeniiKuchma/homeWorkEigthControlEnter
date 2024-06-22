@@ -15,14 +15,15 @@ namespace homeWorkEigthControlEnter
 
             while (wordForExit != userInput)
             {
-                Console.Write("Для выхода из программы введите слово exit: ");
+                Console.Write($"Для выхода из программы введите слово {wordForExit}: ");
                 userInput = Console.ReadLine();
-                if (wordForExit == userInput)
+
+                if (wordForExit != userInput)
                 {
-                    Console.WriteLine("Верное слово");
-                    break;
+                    Console.WriteLine("Попробуйте еще раз");
+                    continue;
                 }
-                Console.WriteLine("Попробуйте еще раз");
+                Console.WriteLine("Верное слово");
             }
         }
     }
